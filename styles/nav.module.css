@@ -1,5 +1,17 @@
-.titleNav .logo{
-    font-size: 3rem;
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 11rem;
+    padding:  1.5rem 2rem 1rem;
+    background-color: var(--dark-nav);
+    border-bottom: 1px solid var(--grey-hr) ;
+}
+
+.navbar .logo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-grey-logo);
 }
 
 .filterList{
@@ -12,5 +24,6 @@
 
 .filterList hr,
 .filterList li{
-    margin: 0 3rem
+    margin: 0 3rem;
+    color: var(--text-grey);
 }

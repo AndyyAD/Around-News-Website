@@ -18,3 +18,21 @@ a{
     text-decoration: none;
     color: var(--black);
 }
+
+body{
+    background-color: var(--dark-main);
+}
+
+/* ---------------------------- VARIABLES ---------------------------- */
+
+:root{
+    --dark-main: #292a2d;
+    --dark-nav: #202124;
+    --dark-articles: #1f1f1f;
+    --dark-others: #303030;
+    --text-grey-logo: #efeff0;
+    --text-white: #f2f2f2;
+    --text-grey: #cdcdcd; 
+    --grey-other: #3c4043;
+    --grey-hr: #505050;
+}
