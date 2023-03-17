@@ -4,7 +4,7 @@
     justify-content: space-between;
     height: 11rem;
     padding:  1.5rem 2rem 1rem;
-    background-color: var(--dark-nav);
+    background: var(--dark-nav);
     border-bottom: 1px solid var(--grey-hr) ;
 }
 
@@ -24,6 +24,27 @@
 
 .filterList hr,
 .filterList li{
-    margin: 0 3rem;
+    margin: 0 2.5rem;
     color: var(--text-grey);
+}
+
+.upperNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchbox{
+    display: inline-flex;
+}
+
+.input{
+    width: 22rem; 
+    padding: 1rem 2rem;
+    outline: none;
+    overflow: hidden;
+    border: 1px solid var(--grey-hr);
+    border-radius: 3rem;
+    color: var(--text-grey);
+    background-color: var(--grey-search);
 }
