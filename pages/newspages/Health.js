@@ -3,19 +3,19 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import utils from '@/styles/utils.module.css'
 
-const India = () => {
+const Health = () => {
     return (
         <>
 			<div className={utils.container}>
 				<Head>
-					<title> Around - India </title>
+					<title> Around - Health </title>
 					<meta name="description" content="Around - Find out what's going on around the world" />
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<link rel="icon" href="/favicon.png" />
 				</Head>
 
 				<main className={`${styles.main} ${utils.container2}`}>
-					<h1 className={styles.mainHead}> Latest News from India: </h1>
+					<h1 className={styles.mainHead}> Latest Health News: </h1>
 					<h2 className={styles.mainDate}> Updated a minute ago </h2>
 					<div className={`${styles.article} ${styles.article1}`}>
 						<div className={styles.newsImg}>  </div>
@@ -63,4 +63,4 @@ const India = () => {
     )
 }
 
-export default India    
+export default Health
