@@ -5,7 +5,7 @@
     height: 11rem;
     padding:  1.5rem 2rem 1rem;
     background: var(--dark-nav);
-    border-bottom: 1px solid var(--grey-hr) ;
+    border-bottom: 1px solid var(--grey-hr);
 }
 
 .navbar .logo{
