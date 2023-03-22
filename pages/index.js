@@ -38,19 +38,19 @@ export default function Home({ news }) {
 	)
 }
 
-export const getServerSideProps = async () => {
-	const apiRes = await fetch(
-		`https://newsapi.org/v2/top-headlines?q=latest&pageSize=10`, {
-		headers: {
-			Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
-		},
-	}
-	);
-	const apiJson = await apiRes.json();
-	const { articles } = apiJson;
-	return {
-		props: {
-			news: articles,
-		}
-	}
-}
+// export const getServerSideProps = async () => {
+// 	const apiRes = await fetch(
+// 		`https://newsapi.org/v2/top-headlines?q=latest&pageSize=10`, {
+// 		headers: {
+// 			Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
+// 		},
+// 	}
+// 	);
+// 	const apiJson = await apiRes.json();
+// 	const { articles } = apiJson;
+// 	return {
+// 		props: {
+// 			news: articles,
+// 		}
+// 	}
+// }

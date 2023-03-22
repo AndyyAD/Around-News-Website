@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import navs from '@/styles/nav.module.css'
 import SearchBar from '@/component/SearchBar'

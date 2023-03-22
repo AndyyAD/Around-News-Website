@@ -1,36 +1,37 @@
-import React, { useEffect } from 'react'
+import { useState } from 'react'
+import { useDebounce } from 'use-debounce'
+import { useRouter } from 'next/router';
 import nav from '@/styles/nav.module.css'
 
 const SearchBar = () => {
-
-    // const [notices, setNotices] = useState()
-	// const [search, setSearch] = useState <string|null> (null)
-	// const [loading, setLoading] = useState()
-
-    // useEffect(() => {
-    //     async function fetchData(){
-    //         setLoading(true)
-    //         const data = await fetch()
-    //     }
-    // }, [search])
+    const [search, setSearch] = useState('');
+    const [debounced] = useDebounce(search, 500);
+    const router = useRouter();
+    
+    const onSearch = (e) => {
+        e.preventDefault();
+        router.push(`/newspages/${search}`);
+    };
 
     return (
         <>
             <div className={nav.searchbox}>
                 <div className={nav.inputWrap}>
-                    <input 
-                        className={nav.input} 
-                        type="text" 
-                        placeholder='Search News' 
-                        // onChange={(e) => setSearch(e.target.value)}
-                    />
+                    <form onSubmit={onSearch}>
+                        <input 
+                            className={nav.input} 
+                            type="text" 
+                            placeholder='Search News' 
+                            onChange={(e) => setSearch(e.target.value)}
+                        />
+                    </form>
                 </div>
                 <div className={nav.navSuggestWrap}>
-                    0 Results Found
+                    0 Results Found 
                 </div>
             </div>
         </>
     )
-}
+};
 
 export default SearchBar
