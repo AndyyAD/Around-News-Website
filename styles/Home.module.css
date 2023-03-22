@@ -5,7 +5,7 @@
 
 .article{
     width: 100%;
-    height: 15rem;
+    height: 20rem;
     background-color: var(--dark-articles);
     opacity: 2rem;
     border-radius: 3rem;
@@ -27,16 +27,18 @@
 }
 
 .newsImg{
-    width: 20rem;
-    height: 12rem;
+    width: 25rem;
+    height: 17rem;
     background-color: var(--grey-hr);
     border-radius: 2rem;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
+    object-fit: cover;
+    object-position: center;
 }
 
 .newsText{
     width: 100%;
-    height: 10rem;
+    height: 15rem;
     margin: 3rem;
     margin-left: 2.5rem;
     font-size: 1.3rem;
@@ -46,6 +48,7 @@
 
 .newsHead{
     color: var(--text-white);
+    font-size: 2.2rem;
     margin-bottom: 0.1rem;
 }
 
@@ -55,3 +58,8 @@
     bottom: 0;
 }
 
+.newsDesc{
+    font-size: 1.4rem;
+    height: 3.5rem;
+    overflow: hidden;
+}

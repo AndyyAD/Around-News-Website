@@ -3,7 +3,6 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import utils from '@/styles/utils.module.css'
 import Link from 'next/link'
-import Article from '@/component/Article'
 
 export default function Home() {
 	return (
@@ -17,9 +16,18 @@ export default function Home() {
 				</Head>
 
 				<main className={`${styles.main} ${utils.container2}`}>
-				<h1 className={styles.mainHead}> Latest News: </h1>
-            	<h2 className={styles.mainDate}> Updated a minute ago </h2>	
-					<Article/>
+					<h1 className={styles.mainHead}> Latest News: </h1>
+					<h2 className={styles.mainDate}> Updated a minute ago </h2>
+					<Link href="">
+						<div className={`${styles.article} ${styles.article1}`}>
+							<div className={styles.newsImg}>  </div>
+							<div className={styles.newsText}>
+								<h1 className={styles.newsHead}>  </h1>
+								<p className={styles.newsDesc}>  </p>
+								<p className={styles.newsDate}>  </p>
+							</div>
+						</div>
+					</Link>
 				</main>
 			</div>
 		</>
