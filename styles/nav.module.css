@@ -51,17 +51,3 @@
     color: var(--text-grey);
     background-color: var(--grey-search);
 }
-
-.navSuggestWrap{
-    position: absolute;
-    top: 110%;
-    display: none;
-    width: 30rem;
-    height: auto;
-    border-radius: 2rem;
-    margin-top: 1rem;
-    background-color: var(--grey-search);
-    color: var(--text-grey);
-    padding: 2rem 3rem;
-    font-size: 1.3rem;
-}

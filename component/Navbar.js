@@ -8,8 +8,10 @@ const Navbar = () => {
         <>
             <nav className={navs.navbar}>
                 <div className={navs.upperNav}>
+                <Link href="/">
                     <h1 className={navs.logo}> Around News </h1>
-                    <SearchBar/>
+                </Link>
+                <SearchBar/>
                 </div>
                 <div className={navs.newsFliter}>
                     <ul className={navs.filterList}>

@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { useDebounce } from 'use-debounce'
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import nav from '@/styles/nav.module.css'
 
-const SearchBar = () => {
+const SearchBar = ({keywords}) => {
     const [search, setSearch] = useState('');
-    const [debounced] = useDebounce(search, 500);
     const router = useRouter();
-    
+
     const onSearch = (e) => {
         e.preventDefault();
         router.push(`/newspages/${search}`);
@@ -18,16 +18,13 @@ const SearchBar = () => {
             <div className={nav.searchbox}>
                 <div className={nav.inputWrap}>
                     <form onSubmit={onSearch}>
-                        <input 
-                            className={nav.input} 
-                            type="text" 
-                            placeholder='Search News' 
+                        <input
+                            className={nav.input}
+                            type="text"
+                            placeholder='Search News'
                             onChange={(e) => setSearch(e.target.value)}
                         />
                     </form>
-                </div>
-                <div className={nav.navSuggestWrap}>
-                    0 Results Found 
                 </div>
             </div>
         </>
