@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import utils from '@/styles/utils.module.css'
@@ -7,13 +8,19 @@ const newspages = ({ pageName, news }) => {
     return (
         <>
             <div className={`${styles.main} ${utils.container2}`}>
+                <Head>
+                    <title> Around - {pageName} </title>
+                    <meta name="description" content="Around - Find out what's going on around the world" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <link rel="icon" href="/favicon.png" />
+                </Head>
                 <h1 className={styles.mainHead}> {pageName} News: </h1>
                 <h2 className={styles.mainDate}> Updated a minute ago </h2>
                 {
-                    news.map((theNews, index) => (
+                    news?.map((theNews, index) => (
                         <Link href={theNews.url}>
                             <div key={index} className={`${styles.article}`}>
-                                {!!theNews.urlToImage && <img className={styles.newsImg} src={theNews.urlToImage}/>}
+                                {!!theNews.urlToImage && <img className={styles.newsImg} src={theNews.urlToImage} />}
                                 <div className={styles.newsText}>
                                     <h1 className={styles.newsHead}> {theNews.title} </h1>
                                     <div className={styles.newsDesc}> <p > {theNews.description} </p> </div>
