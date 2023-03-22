@@ -22,7 +22,7 @@ const SearchBar = () => {
                         className={nav.input} 
                         type="text" 
                         placeholder='Search News' 
-                        onChange={(e) => setSearch(e.target.value)}
+                        // onChange={(e) => setSearch(e.target.value)}
                     />
                 </div>
                 <div className={nav.navSuggestWrap}>

@@ -10,7 +10,7 @@
     opacity: 2rem;
     border-radius: 3rem;
     display: flex;
-    margin-top: 3rem;
+    margin-top: 2rem;
     align-items: center;    
 }
 
@@ -22,7 +22,8 @@
 .mainDate{
     font-size: 1.3rem;
     font-weight: 400;
-    color: var(--text-grey2)
+    color: var(--text-grey2);
+    padding-bottom: 1rem;
 }
 
 .newsImg{
