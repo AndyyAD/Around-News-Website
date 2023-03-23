@@ -74,9 +74,3 @@ Start the server
 
 
 ## Screenshots
-
-Home Page
-![image](https://user-images.githubusercontent.com/80671044/227111641-b49c4048-6951-4dbd-8948-4b320976c2de.png)
-
-Indian News Page
-![image](https://user-images.githubusercontent.com/80671044/227111997-2fa47d3b-2589-4d1b-8cbd-210005374b74.png)
