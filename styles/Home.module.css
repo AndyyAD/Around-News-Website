@@ -33,7 +33,6 @@
 .newsImg{
     width: 25rem;
     height: 17rem;
-    background-color: var(--grey-hr);
     border-radius: 2rem;
     margin-left: 1.5rem;
     object-fit: cover;
@@ -81,4 +80,24 @@
 
 .moreLink:hover{
     background-color: var(--grey-search);
+}
+
+/* ---------------------------- MEDIA QUERIES ---------------------------- */
+
+@media (max-width: 500px) {
+    .article{
+        display: block;
+        height: auto;
+        padding: 2.5rem 1rem 1rem 1rem;
+    }
+
+    .newsText{
+        width: 80%;
+        height: auto;
+    }
+
+    .newsDate{
+        position: relative;
+        margin-top: 3rem;
+    }
 }

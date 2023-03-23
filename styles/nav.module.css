@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
     height: 11rem;
     padding:  1.5rem 2rem 1rem;
     background: var(--dark-nav);
@@ -56,3 +57,41 @@
     color: var(rgb(0, 179, 255));
 }
 
+/* ---------------------------- MEDIA QUERIES ---------------------------- */
+
+@media (max-width: 850px) {
+    .navbar{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .upperNav{
+        display: block;
+        margin: .5rem auto;
+    }
+
+    .searchbox{
+        display: block;
+        margin: 2rem auto;
+    }
+
+    .input{
+        width: 100%;
+    }
+
+    .filterList{
+        margin: 2rem 0 0 0;
+        justify-content: flex-start;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    .filterList hr{
+        display: none;
+    }
+
+    .filterList li{
+        padding: 1rem;
+    }
+}
