@@ -8,7 +8,7 @@ In Around you could access latest news and also filter news from different categ
 
 ## 🎈Features
 
- - Awesome Home Page - Display latest news in the homepage with a pagination button to display more.
+ - Awesome Home Page - Display latest news in the homepage with a news filter bar on top.
 
  - News filter - Can filter news according to the topic you selected (India, World, Business, etc).
 
