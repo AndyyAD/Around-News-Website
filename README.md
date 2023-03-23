@@ -74,3 +74,11 @@ Start the server
 
 
 ## Screenshots
+
+Homepage:
+
+![image](https://user-images.githubusercontent.com/80671044/227129938-62d431f0-bf06-461f-9cf6-5fbbf2c0682b.png)
+
+India news Page:
+
+![image](https://user-images.githubusercontent.com/80671044/227130019-253b251f-3980-4993-a2a4-abd3b8b654df.png)
