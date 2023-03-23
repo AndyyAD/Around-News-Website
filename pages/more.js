@@ -3,7 +3,7 @@ import styles from '@/styles/Home.module.css'
 import utils from '@/styles/utils.module.css'
 import Link from 'next/link'
 
-export default function Home({ news }) {
+export default function more({ news }) {
 	return (
 		<>
 			<div className={utils.container}>
@@ -15,7 +15,7 @@ export default function Home({ news }) {
 				</Head>
 
 				<main className={`${styles.main} ${utils.container2}`}>
-					<h1 className={styles.mainHead}> Latest News: </h1>
+					<h1 className={styles.mainHead}> All Latest News: </h1>
 					<h2 className={styles.mainDate}> Updated a minute ago </h2>
 					{
 						news?.map((theNews, index) => (
@@ -32,10 +32,6 @@ export default function Home({ news }) {
 						))
 					}
 				</main>
-
-				<Link href="/more">
-					<div className={styles.moreLink}> More News </div>
-				</Link>
 			</div>
 		</>
 	)
@@ -43,7 +39,7 @@ export default function Home({ news }) {
 
 export const getServerSideProps = async () => {
 	const apiRes = await fetch(
-		`https://newsapi.org/v2/top-headlines?q=latest&pageSize=10`, {
+		`https://newsapi.org/v2/top-headlines?sources=bbc-news`, {
 		headers: {
 			Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
 		},

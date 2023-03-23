@@ -36,4 +36,9 @@ body{
     --text-grey2: #a1a1a1; 
     --grey-search: #3c4043;
     --grey-hr: #505050;
+    --blue-link: #505BDA;
+}
+
+li.activeLink a{ 
+    color: var(--blue-link);
 }

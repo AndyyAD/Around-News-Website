@@ -1,10 +1,8 @@
 import { useState } from 'react'
-import { useDebounce } from 'use-debounce'
 import { useRouter } from 'next/router';
-import Link from 'next/link';
 import nav from '@/styles/nav.module.css'
 
-const SearchBar = ({keywords}) => {
+const SearchBar = () => {
     const [search, setSearch] = useState('');
     const router = useRouter();
 

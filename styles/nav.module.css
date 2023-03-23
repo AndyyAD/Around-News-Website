@@ -51,3 +51,8 @@
     color: var(--text-grey);
     background-color: var(--grey-search);
 }
+
+.filterList li::selection{
+    color: var(rgb(0, 179, 255));
+}
+

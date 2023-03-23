@@ -1,6 +1,6 @@
 .main{
     color: var(--text-grey);
-    padding: 5rem 0;
+    padding: 5rem 0 3rem 0;
 }
 
 .article{
@@ -12,6 +12,10 @@
     display: flex;
     margin-top: 2rem;
     align-items: center;    
+}
+
+.article:hover{
+    background-color: var(--dark-nav);
 }
 
 .mainHead{
@@ -62,4 +66,19 @@
     font-size: 1.4rem;
     height: 3.5rem;
     overflow: hidden;
+}
+
+.moreLink{
+    width: 15rem;
+    padding: 1.5rem 3rem;
+    background-color: var(--dark-articles);
+    text-align: center;
+    color: var(--text-white);
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    margin: 0 auto;
+}
+
+.moreLink:hover{
+    background-color: var(--grey-search);
 }
