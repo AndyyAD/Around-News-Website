@@ -17,7 +17,6 @@ In Around you could access latest news and also filter news from different categ
 
 ## 👨‍💻 Tech Used
 
-
 **Main**
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
@@ -33,6 +32,8 @@ In Around you could access latest news and also filter news from different categ
 
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+
 ## 🛠️ Deployment
 
 This app is deployed using vercel, click on the below link to see the page.
@@ -70,5 +71,7 @@ Start the server
 ```bash
     yarn dev
 ```
+
+
 ## Screenshots
 
